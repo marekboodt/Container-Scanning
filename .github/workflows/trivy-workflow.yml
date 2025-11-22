@@ -34,7 +34,7 @@ jobs:
           # exit-code: '1'
 
       - name: Upload SARIF file
-        uses: actions/upload-artifact@4
+        uses: actions/upload-artifact@v4
         with:
           name: trivy-results
           path: trivy-results.sarif
