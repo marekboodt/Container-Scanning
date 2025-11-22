@@ -34,12 +34,12 @@ jobs:
           # exit-code: '1'
 
       - name: Upload SARIF file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@4
         with:
           name: trivy-results
           path: trivy-results.sarif
       
       - name: Upload to GitHub Security
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: trivy-results.sarif
