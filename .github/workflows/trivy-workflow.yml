@@ -22,3 +22,13 @@ jobs:
           image-ref: 'test-image:latest'
           format: 'table'
           severity: 'HIGH,CRITICAL'
+
+      
+      - name: Run Trivy scan Sarif
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'test-image:latest'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+          severity: 'CRITICAL'
+          # exit-code: '1'
