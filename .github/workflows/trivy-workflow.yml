@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   container-scan:
-    uses: marekboodt/Security-Scanning-Repo/.github/workflows/container-scan-workflow.yml@main
+    uses: marekboodt/Security-Scanning-Repo/.github/workflows/10-container-scan-workflow.yml@main
     with:
       image-name: mijn-app
       image-tag: latest
