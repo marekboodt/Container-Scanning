@@ -1,11 +1,11 @@
 # =============================================================================
-# PROJECT-SPECIFIC EXCEPTIONS
+# [PROJECT-NAME-SPECIFIC] EXCEPTIONS
 # =============================================================================
 # Project: [Your Project Name]
 # Team: [Your Team Name]
 # Contact: [team-lead@company.com]
-# Last review: 2024-11-22
-# Next review: 2025-01-22
+# Last review: YYYY-MM-DD
+# Next review: YYYY-MM-DD
 # =============================================================================
 # FORMAT: CVE-YYYY-XXXXX  # Reason | Owner | Added | Review/Expires
 #
@@ -15,31 +15,9 @@
 # - Context-specific issues
 #
 # DO NOT ADD:
-# - OS/kernel issues (use global or base-image exceptions)
+# - OS/kernel issues - make Pull Request into the global/base image exception list. The security Team will review and can add it for everyone. 
 # - Issues already in global.trivyignore
 # =============================================================================
-
-# =============================================================================
-# DEPENDENCIES - Upgrade planned
-# =============================================================================
-CVE-2023-99999  # express@3.0.0 - migrate to v4 in Q2 2025 | Dev Team | 2024-11-22 | Expires 2025-06-30
-
-# =============================================================================
-# FALSE POSITIVES - Not exploitable in our context
-# =============================================================================
-CVE-2024-11111  # Feature disabled via env var | Dev Team | 2024-11-22 | Review 2025-05-01
-
-# =============================================================================
-# VENDOR PENDING - Waiting for library update
-# =============================================================================
-# CVE-____-_____  # Library X - vendor fix scheduled for vX.Y | Dev Team | 2024-__-__ | Review 2025-__-__
-
-# =============================================================================
-# TEMPLATE - Copy when adding new exception
-# =============================================================================
-# CVE-____-_____  # _________________________ | __________ | 2024-__-__ | Review 2025-__-__
-#                 # ↑ Why accepted?           ↑ Team       ↑ Today     ↑ Max 6 months
-#
 # GOOD EXAMPLES:
 # CVE-2024-12345  # Not exploitable - API disabled in prod | Dev Team | 2024-11-22 | Review 2025-05-01
 # CVE-2024-67890  # Library EOL - replacement in sprint 45 | Dev Team | 2024-11-22 | Expires 2025-03-15
@@ -48,3 +26,26 @@ CVE-2024-11111  # Feature disabled via env var | Dev Team | 2024-11-22 | Review 
 # CVE-2024-12345  # TODO
 # CVE-2024-12345  # Accepted
 # CVE-2024-12345  # Will fix later
+# =============================================================================
+# TEMPLATE - Copy when adding new exception
+# =============================================================================
+# CVE-YYYY-XXXXX  # Reason | Owner/Team | Date added YYYY-MM-DD| Review/Expire Date YYYY-MM-DD
+
+# =============================================================================
+# FALSE POSITIVES TESTING - Not exploitable in our context
+# =============================================================================
+CVE-2024-11111  # Feature disabled via env var | Dev Team | 2024-11-22 | Review 2025-05-01
+CVE-2017-16119  # TESTING | Owner/Team | Date added YYYY-MM-DD| Review/Expire Date YYYY-MM-DD
+
+# =============================================================================
+# DEPENDENCIES - Upgrade planned
+# =============================================================================
+CVE-2023-99999  # express@3.0.0 - migrate to v4 in Q2 2025 | Dev Team | 2024-11-22 | Expires 2025-06-30
+
+
+
+# =============================================================================
+# VENDOR PENDING - Waiting for library update
+# =============================================================================
+# CVE-____-_____  # Library X - vendor fix scheduled for vX.Y | Dev Team | 2024-__-__ | Review 2025-__-__
+
