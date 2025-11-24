@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   container-scan:
-    uses: marekboodt/Security-Scanning-Repo/.github/workflows/10-container-scan-workflow.yml@main
+    uses: marekboodt/Security-Scanning-Repo/.github/workflows/50-container-scan-workflow.yml@main
     with:
       image-name: my-trivy-test-app
       image-tag: latest
